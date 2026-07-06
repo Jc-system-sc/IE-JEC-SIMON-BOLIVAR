@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I.E. JEC "Simón Bolívar" — Educación con identidad</title>
+<meta name="description" content="Institución Educativa Simón Bolívar. Formación integral en Inicial, Primaria y Secundaria. Conoce nuestra propuesta educativa e ingresa al Aula Virtual.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════ PANTALLA DE TRANSICIÓN AL AULA VIRTUAL ═══════════════════ -->
+<div class="transicion-aula" id="transicionAula">
+  <div class="transicion-contenido">
+    <img src="assets/logo.png" alt="" class="transicion-logo">
+    <div class="transicion-texto">Ingresando al Aula Virtual</div>
+    <div class="transicion-barra"><div class="transicion-barra-fill" id="transicionBarra"></div></div>
+    <div class="transicion-sub">Simón Bolívar · Plataforma educativa</div>
+  </div>
+</div>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="header-logo">
+      <img src="assets/logo.png" alt="Escudo I.E. Simón Bolívar" class="header-logo-img">
+      <div class="logo-info">
+        <span class="logo-nombre">I.E. JEC &quot;Simón Bolívar&quot;</span>
+        <span class="logo-sub">Formación con identidad desde 1996</span>
+      </div>
+    </a>
+
+    <nav class="header-nav" id="headerNav">
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#niveles" class="nav-link">Niveles</a>
+      <a href="#director" class="nav-link">Dirección</a>
+      <a href="#docentes" class="nav-link">Docentes</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#admision" class="nav-link">Admisión</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <button class="btn-tema" id="btnTema" aria-label="Cambiar a modo oscuro">
+        <i class="fa-solid fa-moon" id="iconTema"></i>
+      </button>
+      <a href="https://tu-aula-virtual.vercel.app" class="btn-aula" id="btnAula" data-barra>
+        <span class="btn-aula-fill"></span>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Ingresar al Aula Virtual</span>
+      </a>
+      <button class="btn-hamburguesa" id="btnMenu" aria-label="Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="hero-texto reveal">
+        <span class="eyebrow">Institución Educativa &middot; JEC</span>
+        <h1 class="hero-titulo">Formamos personas,<br>no solo estudiantes.</h1>
+        <p class="hero-desc">
+          Desde 1996 acompañamos a nuestros estudiantes en los niveles de Inicial, Primaria y
+          Secundaria, con una educación rigurosa, humana y comprometida con la comunidad de Lima.
+        </p>
+        <div class="hero-acciones">
+          <a href="https://tu-aula-virtual.vercel.app" class="btn-primario" id="btnAulaHero" data-barra>
+            <span class="btn-fill"></span>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Ingresar al Aula Virtual</span>
+          </a>
+          <a href="#nosotros" class="btn-secundario" data-barra>
+            <span class="btn-fill"></span>
+            <span>Conócenos</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-fotos">
+        <div class="marco marco-1"><img src="assets/placeholder.svg" alt="Fachada principal del colegio — reemplazar con foto real"></div>
+        <div class="marco marco-2"><img src="assets/placeholder.svg" alt="Estudiantes en actividad escolar — reemplazar con foto real"></div>
+        <div class="marco marco-3"><img src="assets/placeholder.svg" alt="Patio principal del colegio — reemplazar con foto real"></div>
+        <div class="hero-sello">
+          <i class="fa-solid fa-award"></i>
+          <span><strong>28</strong> años formando<br>generaciones</span>
+        </div>
+      </div>
+    </div>
+    <a href="#nosotros" class="scroll-indicador" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════ NOSOTROS ═══════════════════ -->
+  <section class="seccion" id="nosotros">
+    <div class="contenedor">
+      <div class="dos-col dos-col-reversa">
+        <div class="reveal">
+          <span class="eyebrow">Nuestra Historia</span>
+          <h2 class="titulo-seccion">Casi tres décadas construyendo comunidad educativa</h2>
+          <p class="parrafo">
+            El Colegio Simón Bolívar nació con una convicción simple: la educación de calidad
+            no es un privilegio, es un compromiso diario. Desde entonces hemos crecido junto a
+            miles de familias, manteniendo siempre el mismo estándar de exigencia académica y
+            cercanía humana.
+          </p>
+          <p class="parrafo">
+            Como institución de Jornada Escolar Completa (JEC), ofrecemos más horas de
+            aprendizaje, talleres complementarios y acompañamiento tutorial, dentro de una
+            infraestructura pensada para el desarrollo integral de cada estudiante.
+          </p>
+          <div class="mv-grid">
+            <div class="mv-card">
+              <i class="fa-solid fa-compass"></i>
+              <h3>Misión</h3>
+              <p>Formar estudiantes íntegros, críticos y competentes, capaces de transformar su
+                entorno con valores sólidos y pensamiento propio.</p>
+            </div>
+            <div class="mv-card">
+              <i class="fa-solid fa-eye"></i>
+              <h3>Visión</h3>
+              <p>Ser referente educativo en la región por la excelencia académica y la formación
+                humana de nuestros egresados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-columna reveal">
+          <div class="stat-card">
+            <span class="stat-num" data-cuenta="28">0</span>
+            <span class="stat-label">Años de trayectoria</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-cuenta="1200">0</span>
+            <span class="stat-label">Estudiantes activos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-cuenta="65">0</span>
+            <span class="stat-label">Docentes especializados</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-cuenta="97">0</span>
+            <span class="stat-label">% de egresados en universidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ NIVELES ═══════════════════ -->
+  <section class="seccion seccion-alterna" id="niveles">
+    <div class="contenedor">
+      <div class="encabezado-seccion reveal">
+        <span class="eyebrow">Propuesta Educativa</span>
+        <h2 class="titulo-seccion">Un camino formativo, tres etapas</h2>
+        <p class="parrafo-centro">Acompañamos a cada estudiante desde sus primeros años hasta su
+          egreso, con un enfoque pedagógico que evoluciona según su edad y necesidades.</p>
+      </div>
+
+      <div class="niveles-grid">
+        <div class="nivel-card reveal">
+          <div class="nivel-icono"><i class="fa-solid fa-shapes"></i></div>
+          <h3>Inicial</h3>
+          <span class="nivel-edad">3 a 5 años</span>
+          <p>Estimulación temprana y desarrollo socioemocional a través del juego y la
+            exploración guiada.</p>
+        </div>
+        <div class="nivel-card destacado reveal">
+          <div class="nivel-icono"><i class="fa-solid fa-book-open"></i></div>
+          <h3>Primaria</h3>
+          <span class="nivel-edad">6 a 11 años</span>
+          <p>Bases sólidas en comunicación, matemática y ciencias, con talleres de arte, inglés
+            e informática.</p>
+        </div>
+        <div class="nivel-card reveal">
+          <div class="nivel-icono"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Secundaria</h3>
+          <span class="nivel-edad">12 a 16 años</span>
+          <p>Formación preuniversitaria, orientación vocacional y proyectos de investigación
+            aplicada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MENSAJE DEL DIRECTOR ═══════════════════ -->
+  <section class="seccion" id="director">
+    <div class="contenedor">
+      <div class="director-grid">
+        <div class="director-foto reveal">
+          <div class="marco marco-director">
+            <img src="assets/placeholder.svg" alt="Director del colegio — reemplazar con foto real">
+          </div>
+        </div>
+        <div class="director-texto reveal">
+          <span class="eyebrow">Palabras del Director</span>
+          <h2 class="titulo-seccion">&quot;La educación transforma cuando se hace con propósito&quot;</h2>
+          <p class="director-mensaje">
+            <span class="letra-capital">C</span>ada mañana, al ver llegar a nuestros estudiantes,
+            recuerdo por qué elegimos esta labor: formar personas capaces de pensar por sí
+            mismas y de aportar a su comunidad. En el Simón Bolívar no buscamos solo buenos
+            resultados académicos — buscamos formar ciudadanos con criterio propio, disciplina
+            y sentido de propósito.
+          </p>
+          <p class="director-mensaje">
+            Este Aula Virtual es un paso más en ese compromiso: acercar la educación de calidad
+            a cada hogar, con las herramientas que la época actual exige.
+          </p>
+          <div class="director-firma">
+            <span class="director-nombre">Mg. [Nombre del Director]</span>
+            <span class="director-cargo">Director General</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PLANA DOCENTE ═══════════════════ -->
+  <section class="seccion seccion-alterna" id="docentes">
+    <div class="contenedor">
+      <div class="encabezado-seccion reveal">
+        <span class="eyebrow">Nuestro Equipo</span>
+        <h2 class="titulo-seccion">La plana docente que hace la diferencia</h2>
+        <p class="parrafo-centro">Profesionales especializados, con vocación y actualización
+          pedagógica constante.</p>
+      </div>
+
+      <div class="docentes-grid">
+        <div class="docente-card reveal">
+          <div class="docente-foto"><img src="assets/placeholder.svg" alt="Foto docente — reemplazar"></div>
+          <h3>Prof. María Carrasco</h3>
+          <span class="docente-area">Matemática</span>
+        </div>
+        <div class="docente-card reveal">
+          <div class="docente-foto"><img src="assets/placeholder.svg" alt="Foto docente — reemplazar"></div>
+          <h3>Prof. Luis Ramírez</h3>
+          <span class="docente-area">Historia y Geografía</span>
+        </div>
+        <div class="docente-card reveal">
+          <div class="docente-foto"><img src="assets/placeholder.svg" alt="Foto docente — reemplazar"></div>
+          <h3>Prof. Inés Ríos</h3>
+          <span class="docente-area">Comunicación</span>
+        </div>
+        <div class="docente-card reveal">
+          <div class="docente-foto"><img src="assets/placeholder.svg" alt="Foto docente — reemplazar"></div>
+          <h3>Prof. Marianella Aguirre</h3>
+          <span class="docente-area">Ciencias Naturales</span>
+        </div>
+        <div class="docente-card reveal">
+          <div class="docente-foto"><img src="assets/placeholder.svg" alt="Foto docente — reemplazar"></div>
+          <h3>Prof. Carlos Mendoza</h3>
+          <span class="docente-area">Educación Física</span>
+        </div>
+        <div class="docente-card reveal">
+          <div class="docente-foto"><img src="assets/placeholder.svg" alt="Foto docente — reemplazar"></div>
+          <h3>Prof. Diego Sánchez</h3>
+          <span class="docente-area">Inglés</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALERÍA ═══════════════════ -->
+  <section class="seccion" id="galeria">
+    <div class="contenedor">
+      <div class="encabezado-seccion reveal">
+        <span class="eyebrow">Vida Escolar</span>
+        <h2 class="titulo-seccion">Nuestros estudiantes en acción</h2>
+      </div>
+
+      <div class="galeria-filtros reveal">
+        <button class="filtro-chip activo" data-filtro="todos">Todos</button>
+        <button class="filtro-chip" data-filtro="academico">Académico</button>
+        <button class="filtro-chip" data-filtro="deporte">Deporte</button>
+        <button class="filtro-chip" data-filtro="arte">Arte y Cultura</button>
+        <button class="filtro-chip" data-filtro="ciencia">Ciencia</button>
+      </div>
+
+      <div class="galeria-grid" id="galeriaGrid">
+        <div class="galeria-item reveal" data-cat="academico"><img src="assets/placeholder.svg" alt="Clase de aula — reemplazar"><span class="galeria-tag">Académico</span></div>
+        <div class="galeria-item reveal" data-cat="deporte"><img src="assets/placeholder.svg" alt="Actividad deportiva — reemplazar"><span class="galeria-tag">Deporte</span></div>
+        <div class="galeria-item reveal" data-cat="arte"><img src="assets/placeholder.svg" alt="Taller de arte — reemplazar"><span class="galeria-tag">Arte</span></div>
+        <div class="galeria-item reveal" data-cat="ciencia"><img src="assets/placeholder.svg" alt="Feria de ciencias — reemplazar"><span class="galeria-tag">Ciencia</span></div>
+        <div class="galeria-item reveal" data-cat="academico"><img src="assets/placeholder.svg" alt="Biblioteca — reemplazar"><span class="galeria-tag">Académico</span></div>
+        <div class="galeria-item reveal" data-cat="deporte"><img src="assets/placeholder.svg" alt="Campeonato interno — reemplazar"><span class="galeria-tag">Deporte</span></div>
+        <div class="galeria-item reveal" data-cat="arte"><img src="assets/placeholder.svg" alt="Presentación de danza — reemplazar"><span class="galeria-tag">Arte</span></div>
+        <div class="galeria-item reveal" data-cat="ciencia"><img src="assets/placeholder.svg" alt="Laboratorio de ciencias — reemplazar"><span class="galeria-tag">Ciencia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ INFRAESTRUCTURA ═══════════════════ -->
+  <section class="seccion seccion-alterna" id="infraestructura">
+    <div class="contenedor">
+      <div class="encabezado-seccion reveal">
+        <span class="eyebrow">Nuestro Campus</span>
+        <h2 class="titulo-seccion">Espacios pensados para aprender</h2>
+      </div>
+
+      <div class="infra-grid">
+        <div class="infra-item infra-grande reveal">
+          <img src="assets/placeholder.svg" alt="Patio principal — reemplazar">
+          <div class="infra-info"><i class="fa-solid fa-tree-city"></i><span>Patio Principal</span></div>
+        </div>
+        <div class="infra-item reveal">
+          <img src="assets/placeholder.svg" alt="Biblioteca — reemplazar">
+          <div class="infra-info"><i class="fa-solid fa-book"></i><span>Biblioteca</span></div>
+        </div>
+        <div class="infra-item reveal">
+          <img src="assets/placeholder.svg" alt="Laboratorio de ciencias — reemplazar">
+          <div class="infra-info"><i class="fa-solid fa-flask"></i><span>Laboratorio</span></div>
+        </div>
+        <div class="infra-item reveal">
+          <img src="assets/placeholder.svg" alt="Sala de cómputo — reemplazar">
+          <div class="infra-info"><i class="fa-solid fa-computer"></i><span>Sala de Cómputo</span></div>
+        </div>
+        <div class="infra-item reveal">
+          <img src="assets/placeholder.svg" alt="Losa deportiva — reemplazar">
+          <div class="infra-info"><i class="fa-solid fa-futbol"></i><span>Losa Deportiva</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ADMISIÓN ═══════════════════ -->
+  <section class="seccion" id="admision">
+    <div class="contenedor">
+      <div class="encabezado-seccion reveal">
+        <span class="eyebrow">Proceso de Ingreso</span>
+        <h2 class="titulo-seccion">Cómo matricular a tu hijo o hija</h2>
+        <p class="parrafo-centro">Un proceso simple, acompañado por nuestro equipo de admisión
+          en cada paso.</p>
+      </div>
+
+      <div class="admision-pasos">
+        <div class="paso-card reveal">
+          <span class="paso-num">01</span>
+          <h3>Consulta de vacantes</h3>
+          <p>Escríbenos por WhatsApp o el formulario de contacto para confirmar disponibilidad
+            en el grado que buscas.</p>
+        </div>
+        <div class="paso-card reveal">
+          <span class="paso-num">02</span>
+          <h3>Entrevista familiar</h3>
+          <p>Agendamos una reunión con la familia y, según el nivel, una evaluación diagnóstica
+            del estudiante.</p>
+        </div>
+        <div class="paso-card reveal">
+          <span class="paso-num">03</span>
+          <h3>Entrega de documentos</h3>
+          <p>Presentación de la documentación requerida y firma del contrato de servicio
+            educativo.</p>
+        </div>
+        <div class="paso-card reveal">
+          <span class="paso-num">04</span>
+          <h3>Matrícula confirmada</h3>
+          <p>Bienvenida oficial a la familia Simón Bolívar y acceso a nuestra plataforma virtual.</p>
+        </div>
+      </div>
+
+      <div class="admision-cta reveal">
+        <a href="https://wa.me/51978159209?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20admisi%C3%B3n" class="btn-primario" target="_blank" rel="noreferrer" data-barra>
+          <span class="btn-fill"></span>
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Consultar vacantes por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════ FOOTER / CONTACTO ═══════════════════ -->
+<footer class="footer" id="contacto">
+  <div class="contenedor footer-grid">
+    <div class="footer-col footer-marca">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Escudo Simón Bolívar">
+        <span>I.E. JEC &quot;Simón Bolívar&quot;</span>
+      </div>
+      <p>Formando personas con identidad, disciplina y propósito desde 1996.</p>
+      <div class="footer-redes">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://wa.me/51978159209" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p><i class="fa-solid fa-location-dot"></i> Av. Principal 123, Lima, Perú</p>
+      <p><i class="fa-solid fa-phone"></i> +51 978 159 209</p>
+      <p><i class="fa-solid fa-envelope"></i> secretaria@simonbolivar.edu.pe</p>
+      <p><i class="fa-solid fa-clock"></i> Lun. a Vie. · 8:00 am – 4:00 pm</p>
+    </div>
+
+    <div class="footer-col footer-form-col">
+      <h4>Escríbenos</h4>
+      <form class="footer-form" id="formContacto">
+        <input type="text" id="fNombre" placeholder="Tu nombre" required>
+        <input type="tel" id="fTelefono" placeholder="Tu teléfono (opcional)">
+        <textarea id="fMensaje" placeholder="¿En qué podemos ayudarte?" rows="3" required></textarea>
+        <button type="submit" class="btn-primario btn-form" data-barra>
+          <span class="btn-fill"></span>
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Enviar por WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; <span id="anioActual"></span> I.E. JEC &quot;Simón Bolívar&quot;. Todos los derechos reservados.</span>
+    <a href="https://tu-aula-virtual.vercel.app" class="footer-aula-link" data-barra>
+      <span class="btn-fill"></span>
+      <i class="fa-solid fa-graduation-cap"></i> Aula Virtual
+    </a>
+  </div>
+</footer>
+
+<a href="https://wa.me/51978159209" class="whatsapp-flotante" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noreferrer">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
